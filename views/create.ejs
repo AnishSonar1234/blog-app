@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Detail Form</title>
+    <link rel="stylesheet" href="../style/style_create.css">
+</head>
+<body>
+    <%- include("./partial/header") %>
+    <div class="container">
+        <h1>Blog Detail Form</h1>
+        <form method="POST">
+            <label for="title">Blog Title</label>
+            <input type="text" id="title" name="title" placeholder="Enter blog title" required />
+
+            <label for="description">Blog Description</label>
+            <textarea id="description" name="description" placeholder="Enter blog content" rows="8" required></textarea>
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+    <%- include("./partial/footer") %>
+</body>
+</html>

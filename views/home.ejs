@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home</title>
+  <link rel="stylesheet" href="../style/style_home.css"> <!-- Link to your CSS -->
+</head>
+<body>
+  <!-- Navbar -->
+  <header>
+    <nav>
+        <div class="containers">
+          <a href="/" class="logo">My Blog</a>
+          <ul class="nav-links">
+            <li><a href="/">Home</a></li>
+            <li><a href="/about">About</a></li>
+            <li><a href="/create">Create</a></li>
+          </ul>
+        </div>
+      </nav>
+  </header>
+
+  <!-- Main Content -->
+  <main>
+    <div class="top"><div class="img">Welcome to the Blog Page!</div></div>
+    <div class="container">
+      <% items.forEach(item => { %>
+        <div class="post">
+          <div class="blo_item">
+              <h1 class="title"><%= item.title %></h1>
+              <h4><%= item.date %></h4>
+              <p class="para"><%= item.description %></p>
+              <a href="/blogs/<%= item.id %>" class="read-more">Read more</a>
+              <a href="/update/<%= item.id %>" class="upd">Update</a>
+              <a href="/delete/<%= item.id %>"><span  class="delete">Delete</span></a>
+          </div>
+      </div>
+      <% }) %>  
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+      <p>&copy; <%= new Date().getFullYear() %> My Blog. All rights reserved.</p>
+  </footer>
+</body>
+</html>
