@@ -1,0 +1,57 @@
+<nav>
+    <div class="containers">
+        <a href="/" class="logo">My Blog</a>
+        <ul class="nav-links">
+            <li><a href="/">Home</a></li>
+            <li><a href="/about">About</a></li>
+            <li><a href="/create">Create</a></li>
+        </ul>
+    </div>
+</nav>
+<style>
+    body,
+    h1,
+    h2,
+    p,
+    ul,
+    li,
+    a {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        text-decoration: none;
+        box-sizing: border-box;
+    }
+
+    nav {
+        background-color: #333;
+        color: #fff;
+        padding: 10px 20px;
+    }
+
+    nav .containers {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    nav .logo {
+        font-size: 1.5rem;
+        font-weight: bold;
+        color: #fff;
+    }
+
+    nav .nav-links {
+        display: flex;
+        gap: 15px;
+    }
+
+    nav .nav-links a {
+        color: #fff;
+        transition: color 0.3s ease;
+    }
+
+    nav .nav-links a:hover {
+        color: #00bcd4;
+    }
+</style>

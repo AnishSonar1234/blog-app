@@ -1,0 +1,41 @@
+<footer>
+    <p>&copy; <%= new Date().getFullYear() %> My Blog. All rights reserved.</p>
+</footer>
+<style>
+    /* Footer */
+    footer {
+        background-color: #333;
+        color: #fff;
+        padding: 20px 0;
+    }
+
+    footer .container {
+        width: 90%;
+        max-width: 1200px;
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    footer p {
+        font-size: 0.9rem;
+        text-align: center;
+    }
+
+    footer .footer-links {
+        display: flex;
+        gap: 10px;
+    }
+
+    footer .footer-links a {
+        color: #00bcd4;
+        transition: color 0.3s ease;
+    }
+
+    footer .footer-links a:hover {
+        color: #fff;
+    }
+</style>
