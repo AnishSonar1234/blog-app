@@ -1,0 +1,60 @@
+.container {
+    min-height: 85vh;
+    padding: 20px 20px 20px 20px;
+    color: rgb(0, 0, 0);
+    justify-content: center;
+    justify-content: space-evenly;
+    align-content: center;
+    margin-left: 350px;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #FFFFFF;
+    background-image: linear-gradient(180deg, #FFFFFF 0%, #6284FF 50%, #FF0000 100%); 
+}
+form {
+    display: flex;
+    flex-direction: column;  
+    height: 100%;
+    align-content: center;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+input, textarea, button {
+    width: 70%;
+    margin-bottom: 15px;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 20px;
+    box-shadow: 0 0 20px #eee;
+}
+
+textarea {
+    height: 300px;
+}
+
+
+button {background-image: linear-gradient(to right, #E55D87 0%, #5FC3E4  51%, #E55D87  100%)}
+button {
+   margin: 10px;
+   padding: 15px 45px;
+   text-align: center;
+   text-transform: uppercase;
+   transition: 0.5s;
+   background-size: 200% auto;
+   color: white;            
+   box-shadow: 0 0 20px #eee;
+   border-radius: 10px;
+   display: block;
+ }
+
+ button:hover {
+   background-position: right center; /* change the direction of the change here */
+   color: #fff;
+   text-decoration: none;
+ }
