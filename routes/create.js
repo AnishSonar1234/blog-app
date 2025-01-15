@@ -4,8 +4,6 @@ import { Data } from "../models/data.js";
 
 const router = express.Router();
 
-let conn = await mongoose.connect("mongodb://0.0.0.0:27017/todo");
-
 router.get('/create', (req, res) => {
     res.render('create');            
 }).post('/create', (req, res) => {
