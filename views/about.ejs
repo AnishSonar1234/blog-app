@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <link rel="stylesheet" href="../style/style_about.css">
+</head>
+<body>
+    <%- include("./partial/header") %>
+    <div class="container">
+        <div class="image">
+            <img class="img" src="download.jpg">
+            <div class="me">
+                <h1 class="name">Anish N. Sonar</h1>
+                <div class="blog_info">
+                    <div class="box">
+                        <p class="head">Total blogs:-</p>
+                        <p class="num"><%= count %></p>
+                    </div>
+                    <div class="box">
+                        <p class="head">Follower:-</p>
+                        <p class="num">25</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="info">
+            <p class="about_me">
+I’m a web developer passionate about creating dynamic and user-friendly web applications. I enjoy working with technologies like MongoDB, Node.js, and EJS, and I’m always looking to expand my skills in backend development and database integration. When I’m not coding, you’ll often find me exploring new tech trends or working on personal projects to sharpen my skills.
+            </p>
+        </div>
+    </div>
+    <%- include("./partial/footer") %>
+</body>
+</html> 
